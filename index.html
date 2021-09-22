@@ -8,6 +8,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <title>project 4</title>
         <style>
+            body{
+              background-color: #FBF4FC;
+            }
             .r-container{
               height: 900px;
             }
@@ -51,17 +54,20 @@
            .r-search:focus{
              box-shadow: none;
            }
+           .nav-light{
+             background-color: #fff !important;
+           }
         </style>
     </head>
     <body>
-      <nav class="row navbar navbar-light  m-0 p-0">
+      <nav class="row navbar navbar-light nav-light m-0 p-0">
         <div class="col-2 container-fluid r-header border-end m-0 p-0">
           <a class="navbar-brand r-neuro-color" href="#">
             <img src="img/logo.svg" alt="#" width="70px" class="ms-3 me-2 d-inline-block align-text-top">
             NEURO LAB
           </a>
         </div>
-        <div class="col-10 r-header shadow-sm   bg-body rounded ">
+        <div class="col-10 r-header shadow-sm rounded ">
           <img src="img/01 – 7/SearchIcon.svg" alt="#">
           <input type="text" class="d-inline-block form-control ms-1 border-0 ps-0 pe-0 r-search" placeholder="Search">
         </div>
