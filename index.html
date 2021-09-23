@@ -47,29 +47,107 @@
            .r-header{
              height: 60px;
            }
-           .r-search{
-             width: 200px !important;
-             margin-top: 12px;
-           }
            .r-search:focus{
              box-shadow: none;
            }
            .nav-light{
              background-color: #fff !important;
            }
+           .r_circle {
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-color: #EEEEEE;
+           }
+           .dropdown-toggle::after {
+            display: none;
+           }
         </style>
     </head>
     <body>
       <nav class="row navbar navbar-light nav-light m-0 p-0">
         <div class="col-2 container-fluid r-header border-end m-0 p-0">
-          <a class="navbar-brand r-neuro-color" href="#">
-            <img src="img/logo.svg" alt="#" width="70px" class="ms-3 me-2 d-inline-block align-text-top">
+          <a class="navbar-brand r-neuro-color m-0" href="#">
+            <img src="img/logo.svg" alt="#" width="70px" class="ms-3 d-inline-block align-text-top">
             NEURO LAB
           </a>
         </div>
-        <div class="col-10 r-header shadow-sm rounded ">
-          <img src="img/01 – 7/SearchIcon.svg" alt="#">
-          <input type="text" class="d-inline-block form-control ms-1 border-0 ps-0 pe-0 r-search" placeholder="Search">
+        <div class="col-10 r-header shadow-sm  d-flex align-items-center ">
+          <!-- <img src="img/01 – 7/SearchIcon.svg" alt="#"> -->
+
+          <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <img src="img/01 – 7/SearchIcon.svg" alt="#">
+
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control p-0 border-0 r-search " type="search" placeholder="Search or help" aria-label="Search">
+                
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link p-0 ps-3 pe-3" aria-current="page" href="#">
+                    <img src="img/support.svg">
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 ps-3 pe-3" href="#">
+                    <img src="img/01 – 7/Chat Icon.svg">
+                  </a>
+                  </li>
+                  <li class="nav-item ">
+                   <a class="nav-link p-0 ps-3 pe-3 border-end" href="#">
+                    <img src="img/01 – 7/Notification.svg">
+                   </a>
+                  </li>
+                  <li>
+                    <a class="nav-link p-0 ps-3 pe-3 dropdown-toggle r-after"
+                      href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <span class="d-inline-block r_circle position-absolute " 
+                      style=" left:1050px !important; top:-7px"></span>Nidhi Bokadiya<i
+                      class="fas fa-chevron-down ps-2"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+
+          <!-- <input type="text" class="d-inline-block form-control mt-0 border-0 ps-2 pe-0 r-search" placeholder="Search or help">
+           <nav class="navbar navbar-expand-lg navbar-light d-inline-block p-0 ">
+            <div class="container-fluid p-0">              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav p-0 " >
+                  <a class="nav-link p-0 ps-3 pe-3" aria-current="page" href="#">
+                    <img src="img/support.svg">
+                  </a>
+                  <a class="nav-link p-0 ps-3 pe-3" href="#">
+                    <img src="img/01 – 7/Chat Icon.svg">
+                  </a>
+                  <a class="nav-link p-0 ps-3 pe-3 border-end" href="#">
+                    <img src="img/01 – 7/Notification.svg">
+                  </a>
+                  
+                    <a class="nav-link p-0 ps-3 pe-3 dropdown-toggle r-after"
+                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="d-inline-block r_circle position-absolute " 
+                        style="left:270px !important; top:-7px"></span>Nidhi Bokadiya<i
+                        class="fas fa-chevron-down ps-2"></i>
+                </a>
+                 
+                </div>
+              </div>
+            </div>
+          </nav> -->
         </div>
       </nav>    
           <div class="container-fluid row m-0 p-0 r-container "> 
